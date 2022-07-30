@@ -1,4 +1,4 @@
-function compile(data,values) {
+function m(data,values) {
     let match = data.match(/\{\{(.*?)\}\}/g);
 
     if(match){
@@ -22,4 +22,22 @@ function compile(data,values) {
     return data;
 }
 
-module.exports = compile;
+function compile(data,values) {
+
+    let ma = m(data,values);
+
+    return ma;
+}
+
+async function compilefile(data,values) {
+    if(!data.split(".")[1] || !data.split(".")[1] === "eme") return console.log("Only supported .eme file extensions.");
+    const fs = require('fs');
+    let filedata = await fs.readFileSync(data,'utf-8');
+
+    let ma = m(filedata,values);
+
+    return ma;
+}
+
+module.exports.compile = compile;
+module.exports.compilefile = compilefile;

@@ -1,0 +1,19 @@
+{
+  "name": "emejs",
+  "version": "1.0.0",
+  "description": "the best template engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arasemr12/emejs.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arasemr12/emejs/issues"
+  },
+  "homepage": "https://github.com/arasemr12/emejs#readme"
+}

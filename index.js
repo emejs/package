@@ -1,14 +1,23 @@
 function compile(data,values) {
+    let match = data.match(/\{\{(.*?)\}\}/g);
+
+    if(match){
+        match.forEach((m) => {
+            let frm = m.replace(/\{\{|\}\}/g, '').trim();
+            if(!frm.startsWith("=")){
+                data = data.replaceAll(`{{${frm}}}`,eval(frm));
+                eval(frm);
+            }
+        });
+    }
+
     values.forEach((value) => {
-        data = data.replaceAll(`{{${value.name}}}`,value.value);
+        data = data.replaceAll(`{{=${value.name}}}`,value.value);
     });
 
     values.forEach((value) => {
-        data = data.replaceAll(`{{${value.name}.length}}`,value.value.length);
+        data = data.replaceAll(`{{=${value.name}.length}}`,value.value.length);
     });
-
-    //console.log(/{{=.*}}/)
-    //data = data.replaceAll(/{{=.*}}/g,eval("/{{.*}}/g"));
 
     return data;
 }

@@ -1,6 +1,6 @@
 {
   "name": "emejs",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "the best template engine",
   "main": "index.js",
   "scripts": {
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/arasemr12/emejs.git"
   },
-  "author": "",
+  "author": "arasemr12",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/arasemr12/emejs/issues"

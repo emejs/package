@@ -1,6 +1,6 @@
 {
   "name": "emejs",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "the best template engine",
   "main": "index.js",
   "scripts": {

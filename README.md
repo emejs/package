@@ -19,3 +19,6 @@ console.log(emjshtml);
     console.log(emjshtmlfile);
 })()
 ```
+coded by arasemr12#9891
+
+thanks kuzeeeyk#1000

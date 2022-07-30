@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arasemr12/emejs.git"
+    "url": "git+https://github.com/emejs/emejs.git"
   },
   "author": "arasemr12",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/arasemr12/emejs/issues"
+    "url": "https://github.com/emejs/emejs/issues"
   },
-  "homepage": "https://github.com/arasemr12/emejs#readme"
+  "homepage": "https://github.com/emejs/emejs#readme"
 }
